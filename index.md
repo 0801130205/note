@@ -96,7 +96,6 @@ of input channels :
 
 .. math::
     
-
     \vec{x}_c = \vec{\omega}_c
 
 The output shape can be calculated from the shapes of input, filter and
@@ -124,8 +123,8 @@ memory is the ``W`` dimension. Transforming APIs shall be provided to
 allow transform to other formats.
 
 Conv2d forward
-
 ~~~~~~~~~~~~~~
+
 With these parameters, the computation process is then illustrated in
 the following figures.
 
@@ -277,7 +276,6 @@ Get :math:`\vec{dy'}` as the following fig.
 
    <center>
 
-
 **Fig.** Convolution backward data 1.
 
 |padding 8x8|
@@ -285,7 +283,6 @@ Get :math:`\vec{dy'}` as the following fig.
 .. raw:: html
 
    <center>
-
 
 **Fig.** Convolution backward data 2.
 
@@ -314,8 +311,8 @@ It is that once we finished the two steps pre-process, the following
 steps are common convolution, but set :math:`S_b` to 1.
 
 Conv2d backward filter
-
 ~~~~~~~~~~~~~~~~~~~~~~
+
 Backward propagation of filter of conv2d, is to compute the gradient of
 weight, namely :math:`dw`. The operation is complicated and confusing,
 so we start from a simple case, where channel num and batch equal 1, and
